@@ -21,7 +21,7 @@ const AuthButton = ({ onClick, children, variant }: AuthButtonProps) => {
 export const LogInButton = () => {
   return (
     <AuthButton onClick={() => signIn()} variant={"default"}>
-      ログイン
+      Log In
     </AuthButton>
   );
 };
@@ -29,7 +29,7 @@ export const LogInButton = () => {
 export const LogOutButton = () => {
   return (
     <AuthButton onClick={() => signOut()} variant={"outline"}>
-      ログアウト
+      Log Out
     </AuthButton>
   );
 };
