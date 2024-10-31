@@ -2,6 +2,8 @@
 
 import { useSession } from "next-auth/react";
 
+export const runtime = "edge";
+
 export default function Home() {
   const { data: session } = useSession();
   return (
