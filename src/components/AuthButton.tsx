@@ -1,5 +1,3 @@
-"use client";
-
 import { signIn, signOut } from "next-auth/react";
 
 import { Button } from "@/components/ui/button";
@@ -7,7 +5,7 @@ import { Button } from "@/components/ui/button";
 interface AuthButtonProps {
   onClick: () => void;
   children: React.ReactNode;
-  variant: "default" | "outline" | "secondary" | "ghost" | "link";
+  variant: "default" | "outline";
 }
 
 const AuthButton = ({ onClick, children, variant }: AuthButtonProps) => {
